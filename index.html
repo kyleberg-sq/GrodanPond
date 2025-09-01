@@ -6,26 +6,33 @@
   <title>GrodanPond</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-[#26667F] text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-gray-900 text-white p-4 flex justify-between items-center shadow-md">
-    <div class="space-x-4 ml-4">
-      <a href="#" class="hover:text-yellow-400">Home</a>
-      <a href="#" class="hover:text-yellow-400">Games</a>
-      <a href="#" class="hover:text-yellow-400">Profile</a>
-    </div>
-    <h1 class="text-xl font-bold">GrodanPond</h1>
-  </nav>
-
+  <div class="flex justify-center">
+    <nav class="w-[90%] bg-[#124170] text-white p-4 flex justify-between items-center shadow-md mt-8 rounded-lg">
+      <h1 class="text-xl font-bold">GrodanPond</h1>
+      <div class="flex">
+        <div class="space-x-4 ml-4">
+          <a href="" class="hover:text-yellow-400">login</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
   <!-- Hero Section -->
-  <header class="text-center py-12 bg-gradient-to-r from-blue-700 to-green-700 text-white shadow-md">
+  <header class="flex flex-col mx-auto text-center py-12 bg-gradient-to-r text-white w-[90%]">
     <h2 class="text-4xl font-bold mb-2">Welcome to GrodanPond</h2>
-    <p class="text-lg">Play fun card & board games with friends!</p>
+    <p class="text-lg">A place where both card & Board games live togethar, Play fun card & board games with friends!</p>
   </header>
+  
+  <!-- img -->
+  <div class="absolute right-0 z-0">
+    <img class="" src="XWRKs06w-removebg-preview.png" alt="The frogy Wizard">
+  </div>
 
   <!-- Games Section -->
-  <main class="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-7">
+  <main class="max-w-5xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-7 z-10">
     
     <!-- Split Game Card -->
     <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
@@ -48,9 +55,17 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center p-4 mt-12">
-    <p>&copy; 2025 GrodanHat. All rights reserved.</p>
+  <footer class="fixed bottom-0 w-full bg-gray-900 text-white p-4 ">
+    <div class="flex justify-between items-center pl-4 pr-4">
+      <p class="text-sm">&copy; 2025 GrodanHat. All rights reserved.</p>
+      <nav class="space-x-6">
+        <a href="/about" class="hover:text-gray-400">About Me</a>
+        <a href="/contact" class="hover:text-gray-400">Contact</a>
+        <a href="/privacy" class="hover:text-gray-400">Privacy</a>
+      </nav>  
+    </div>
   </footer>
+
 
 </body>
 </html>
